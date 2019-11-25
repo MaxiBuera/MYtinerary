@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
 import flecha from './circled-right-2.png'
+import { Link } from "react-router-dom";
 // import { IoIosArrowDropleftCircle } from 'react-icons/fa';
 // import { IoIosArrowDroprightCircle } from 'react-icons/fa';
 
@@ -14,11 +15,11 @@ export default class Popular extends Component {
     render() {
         return (
             <div className="conteinerr">
-                 <a href="./Page2">
+                 <Link to="/Page2">
                     <div className="circled">
                         <img className="circled-right-2" src={flecha} alt="" />           
                     </div>
-                </a>
+                </Link>
                 <div className="car">
                     <Carousel>
                         <Carousel.Item>

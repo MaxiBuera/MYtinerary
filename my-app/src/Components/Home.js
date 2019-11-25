@@ -2,7 +2,6 @@ import React, { Component } from "react"
 
 //Components
 
-import SideBar from './SideBar/SideBar'
 import MainTitle from './MainTitle/MainTitle'
 import Popular from './Popular/Popular'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,7 +16,6 @@ export default class App extends Component {
   render() {
     return (
       <div>
-          <SideBar />
           <MainTitle />
           <Popular />
       </div>

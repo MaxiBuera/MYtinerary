@@ -7,18 +7,17 @@ const fetchAllCities = (cities) => {
     }
 };
 
-//POR QUE NO ANDA CON UNA PROMESA MAS??????
-export const getAllTheCities = () => dispatch => {
-    return fetch("/api/cities", { method: 'GET' })
+
+export const getAllTheCities = () => (dispatch) => {
+    
+    fetch("http://localhost:5000/cities", { method: 'GET' })
         .then(response => response.json())
-        .then(response => //console.log("Soy response en el action", response))
-            // .then(response => {
+        .then(response => 
             dispatch(fetchAllCities(response))
-            // dispatch({
-            //     type: FETCH_ALL_CITIES,
-            //     cities: response
-            // })
-            // }
         )
         .catch(err => console.log(err));
 }
+
+//middleWare(algo q se ejecuta entre una cosa y otra)
+//thunk(recibe un objeto(lo manda al reducer) o una funcion(la ejecuta y manda un action))
+//...()
