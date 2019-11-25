@@ -6,7 +6,7 @@ export default class MainTitle extends Component {
     render() {
         return (
             <div >
-                <div  className="mytinerary">                   
+                <div className="mytinerary">                   
                     <img className="MYtineraryLogo" src={titleImage} alt="toCities"/>  
                 </div>
                 <div className="desc"> 

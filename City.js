@@ -7,4 +7,4 @@ let cities = new Schema({
     img: String
 })
 
-module.exports = mongoose.model('cities', cities)
+module.exports = mongoose.model('cities', cities,"cities")

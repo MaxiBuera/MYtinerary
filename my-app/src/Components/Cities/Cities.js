@@ -80,7 +80,7 @@ class Cities extends Component {
                     <div>
                         {filterItems.map(item => (
                             <h2 key={item._id}>
-                                <Link to="#">
+                                <Link to="/ItinerariesPage">
                                     <p className="citiesText">{item._city}</p>
                                     <img className="img" src={item._img} alt="img_country"/>
                                 </Link>                                                               
